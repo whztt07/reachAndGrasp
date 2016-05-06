@@ -1,0 +1,46 @@
+
+fragment_program Ogre/Compositor/GlassFP_glsl glsl
+{
+	source Glass_Compositor.glsl
+	default_params
+	{
+		param_named RT int 0
+	}
+}
+
+
+vertex_program Ogre/Compositor/StdQuad_glsl glsl
+{
+	source StdQuad_vp.glsl
+	default_params
+	{
+		param_named_auto worldViewProj worldviewproj_matrix
+	}
+}
+
+material Ogre/Compositor/GlassPass
+{
+	technique
+	{
+		pass
+		{
+			depth_check off
+            polygon_mode_overrideable false
+
+			vertex_program_ref Ogre/Compositor/StdQuad_glsl
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/GlassFP_glsl
+			{
+			}
+
+			texture_unit RT
+			{
+                tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+		}
+	}
+}

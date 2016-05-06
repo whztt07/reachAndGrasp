@@ -1,0 +1,57 @@
+// Example emitted emitters
+particle_system Examples/Explosion
+{
+    material Examples/Flare
+    point_rendering            false
+    particle_width             10
+    particle_height            10
+    cull_each                  false
+    quota                      1000
+    //emit_emitter_quota         10
+    billboard_type             point
+    
+
+    // This Point emitter is emitted by the Box emitter and emits billboard particles itself
+    emitter Point
+    {
+	//particle properities
+	velocity                80        
+	time_to_live            8
+	
+	//how to emit
+	direction               0 1 0
+        angle                   180
+	emission_rate           1000
+        
+	duration                0.1
+        repeat_delay	        8
+    }
+
+
+    // Make em float downwards
+    affector LinearForce
+    {
+        force_vector            0 -100 0
+        force_application       add
+    }
+
+    // Give em some nice colours
+    affector ColourInterpolator
+    {
+        time0                   0
+        colour0                 1 1 0
+        time1                   1.0
+        colour1                 1 0 0
+        time2                   2.0
+        colour2                 0 0 1
+	time3                   3.0
+        colour2                 1 1 1
+    }
+
+    affector DeflectorPlane
+    {
+	plane_point	0 -50 0
+	plane_normal	0 1 0
+	bounce	0.5
+    }
+}

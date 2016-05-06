@@ -1,0 +1,79 @@
+vertex_program Ogre/Compositor/FxaaVP_glsles glsles
+{
+	source glsles/Fxaa_vp.glsles
+	default_params
+	{
+        param_named_auto worldViewProj worldviewproj_matrix
+	}
+}
+
+fragment_program Ogre/Compositor/FxaaFP_glsles glsles
+{
+	source glsles/Fxaa_fp.glsles
+	default_params
+    {
+        param_named_auto inverseViewportWidth inverse_viewport_width
+        param_named_auto inverseViewportHeight inverse_viewport_height
+		param_named diffuseMap int 0
+	}
+}
+
+vertex_program Ogre/Compositor/FxaaVP_glsl glsl
+{
+	source pc/Fxaa_vp.glsl
+	default_params
+	{
+        param_named_auto worldViewProj worldviewproj_matrix
+	}
+}
+
+fragment_program Ogre/Compositor/FxaaFP_glsl glsl
+{
+	source pc/Fxaa_fp.glsl
+	default_params
+    {
+        param_named_auto inverseViewportWidth inverse_viewport_width
+        param_named_auto inverseViewportHeight inverse_viewport_height
+		param_named diffuseMap int 0
+	}
+}
+
+
+vertex_program Ogre/Compositor/FxaaVP unified
+{
+	delegate Ogre/Compositor/FxaaVP_glsles
+	delegate Ogre/Compositor/FxaaVP_glsl
+}
+
+vertex_program Ogre/Compositor/FxaaFP unified
+{
+	delegate Ogre/Compositor/FxaaFP_glsles
+	delegate Ogre/Compositor/FxaaFP_glsl
+}
+
+material Ogre/Compositor/FxaaPass
+{
+	technique
+	{
+		pass
+		{
+			depth_check off
+            polygon_mode_overrideable false
+
+			vertex_program_ref Ogre/Compositor/FxaaVP
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/FxaaFP
+			{
+			}
+
+			texture_unit diffuseMap
+			{
+                tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+		}
+	}
+}

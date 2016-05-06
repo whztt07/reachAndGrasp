@@ -1,0 +1,49 @@
+bzip2
+  Version: 1.0.6
+
+Cg Toolkit
+  Version: 3.1.0013
+
+freeimage
+  Version: 3.17.0
+  CVS checkout: 19.09.2015
+  Libraries:
+   - LibJPEG (9a  19-Jan-2014)
+   - LibOpenJPEG (2.0.0)
+   - LibPNG (1.6.16)
+   - LibRaw (0.17.0)
+   - LibTIFF (4.0.4)
+   - OpenEXR (2.2.0)
+   - WebP (0.4.2)
+   - ZLib (1.2.8)
+
+freetype
+  Version: 2.6.0
+  GIT checkout: 19.09.2015
+  Last commit: cb7a5122e15d3013bd51cfedc8e5d723b6e2e33c
+  Date: Sat Sep 19 07:58:03 2015 +0200
+
+glsl-optimizer
+  GIT checkout: 19.09.2015
+  Last commit: 5cfe0d6736d92aa4e8182f6e31cd5e4b4294caad
+  Date: Sat Jul 25 13:43:11 2015 +0200
+
+hlsl2glsl
+  GIT checkout: 19.09.2015
+  Last commit: 144d3ae71278a690c646bc5f19db95522d296faa
+  Date: Sun Jun 14 02:10:09 2015 +0200
+
+OIS
+  Version: 1.4.0
+  SVN checkout: 19.09.2015
+  Revision: 40 (2012-08-16 05:50:12 +0200 (Do, 16. Aug 2012))
+
+zziplib
+  Version: 0.13.62
+  SVN checkout: 19.09.2015
+  Revision: 532 (2013-11-07 00:50:49 +0100 (Do, 07. Nov 2013))
+
+SDL
+  Version: 2.0.4
+  Mercurial checkout: 19.09.2015
+  Last changeset: 9875:620024536f80 (Fri Sep 18 16:22:23 2015 -0400)

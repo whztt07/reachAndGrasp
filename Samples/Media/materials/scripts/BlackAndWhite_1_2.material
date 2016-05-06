@@ -1,0 +1,76 @@
+
+vertex_program Ogre/Compositor/StdQuad_Tex2a_GLSL_vp_1_2 glsl
+{
+	source StdQuad_Tex2a_vp_1_2.glsl
+	// syntax glsl150
+	// default_params
+	// {
+	// 	param_named_auto worldViewProj worldviewproj_matrix
+	// }
+}
+
+vertex_program Ogre/Compositor/StdQuad_Tex2a_vp_1_2 unified
+{
+	delegate Ogre/Compositor/StdQuad_Tex2a_GLSL_vp_1_2
+	// delegate Ogre/Compositor/StdQuad_Tex2a_GLSLES_vp
+	// delegate Ogre/Compositor/StdQuad_Tex2a_HLSL_vp
+	// delegate Ogre/Compositor/StdQuad_Tex2a_Cg_vp
+}
+
+
+// fragment_program Ogre/Compositor/B&W_Cg_FP cg
+// {
+// 	source GrayScale.cg
+// 	entry_point GrayScale_ps
+// 	profiles ps_4_0 ps_4_0_level_9_1 ps_4_0_level_9_3 ps_2_0 arbfp1
+// }
+
+// fragment_program Ogre/Compositor/B&W_GLSLES_FP glsles
+// {
+// 	source GrayScale.glsles
+// }
+
+fragment_program Ogre/Compositor/B&W_GLSL_FP_1_2 glsl
+{
+	source GrayScale_1_2.glsl
+	//syntax glsl150
+}
+
+fragment_program Ogre/Compositor/B&W_FP_1_2 unified
+{
+	delegate Ogre/Compositor/B&W_GLSL_FP_1_2
+	// delegate Ogre/Compositor/B&W_GLSLES_FP
+	//delegate Ogre/Compositor/B&W_Cg_FP
+}
+
+
+
+material Ogre/Compositor/BlackAndWhite_1_2
+{
+	technique
+	{
+
+		pass
+		{
+			depth_check off
+            polygon_mode_overrideable false
+
+			vertex_program_ref Ogre/Compositor/StdQuad_Tex2a_vp_1_2
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+
+			fragment_program_ref Ogre/Compositor/B&W_FP_1_2
+			{
+				param_named u_intensity float 1.0
+			}
+
+			texture_unit
+			{
+				tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+		}
+	}
+}

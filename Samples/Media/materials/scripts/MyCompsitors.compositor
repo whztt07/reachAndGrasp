@@ -1,0 +1,20 @@
+compositor MyCompositor1
+{
+              technique
+              {
+                            texture scene target_width  target_height  PF_R8G8B8
+                            target scene
+                            {
+                                          input previous
+                            }
+                            target_output
+                            {
+                                          input none
+                                          pass render_quad
+                                          {
+                                                        material MyCompositorMaterial1
+                                                        input 0 scene
+                                          }
+                            }
+              }
+}

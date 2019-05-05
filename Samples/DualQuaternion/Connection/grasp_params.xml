@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<parameters>
+
+  <num>1</num>
+  
+  <parameter0>
+    <name>shou.skeleton</name>
+    <index>0</index>
+	<T0>1.8 </T0>
+	<T1>2.5 </T1>
+	<T2>3.0 </T2>
+	<T3>4.0 </T3>
+  </parameter0>
+  
+
+ </parameters>
+ </opencv_storage>

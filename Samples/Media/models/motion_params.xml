@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<parameters>
+
+  <num>15</num>
+  
+  <parameter0>
+    <name>loco_walk_slow.skeleton</name>
+    <index>0</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>1.0387 </T1>
+	<T2>1.9583 </T2>
+	<T3>0 </T3>
+  </parameter0>
+  
+  <parameter1>
+    <name>loco_walk_fast.skeleton</name>
+    <index>1</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.5507 </T1>
+	<T2>0.9583 </T2>
+	<T3>0 </T3>
+  </parameter1>
+
+   <parameter2>
+    <name>loco_run.skeleton</name>
+    <index>2</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.4293 </T1>
+	<T2>0.8333 </T2>
+	<T3>0 </T3>
+  </parameter2>
+
+  <parameter3>
+    <name>loco_left_bigcircle_slow.skeleton</name>
+    <index>3</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.9014 </T1>
+	<T2>1.777 </T2>
+	<T3>0 </T3>
+  </parameter3>
+  
+   <parameter4>
+    <name>loco_right_bigcircle_slow.skeleton</name>
+    <index>4</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>3.1291 </T0>
+	<T1>4.1911 </T1>
+	<T2>5.1847 </T2>
+	<T3>0 </T3>
+  </parameter4>
+  
+  <parameter5>
+    <name>loco_left_bigcircle_fast.skeleton</name>
+    <index>5</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.8028 </T1>
+	<T2>1.4382 </T2>
+	<T3>0 </T3>
+  </parameter5>
+  
+  <parameter6>
+    <name>loco_right_bigcircle_fast.skeleton</name>
+    <index>6</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>2.5987 </T0>
+	<T1>3.3811 </T1>
+	<T2>4.1345 </T2>
+	<T3>0 </T3>
+  </parameter6>
+  
+  <parameter7>
+    <name>loco_left_smallcircle_slow.skeleton</name>
+    <index>7</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0.7484 </T0>
+	<T1>1.5290 </T1>
+	<T2>2.2428 </T2>
+	<T3>0 </T3>
+  </parameter7>
+  
+  <parameter8>
+    <name>loco_right_smallcircle_slow.skeleton</name>
+    <index>8</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>1.1774 </T0>
+	<T1>2.5401 </T1>
+	<T2>3.2805 </T2>
+	<T3>0 </T3>
+  </parameter8>
+  
+  <parameter9>
+    <name>loco_left_smallcircle_fast.skeleton</name>
+    <index>9</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0.5814 </T0>
+	<T1>1.1972 </T1>
+	<T2>1.7892 </T2>
+	<T3>0 </T3>
+  </parameter9>
+  
+  <parameter10>
+    <name>loco_right_smallcircle_fast.skeleton</name>
+    <index>10</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>1.3776 </T0>
+	<T1>1.9940 </T1>
+	<T2>2.5881 </T2>
+	<T3>0 </T3>
+  </parameter10>
+  
+  <parameter11>
+    <name>loco_left_walk_slow.skeleton</name>
+    <index>11</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.7154 </T1>
+	<T2>1.3192 </T2>
+	<T3>0 </T3>
+  </parameter11>
+  
+  <parameter12>
+    <name>loco_right_walk_slow.skeleton</name>
+    <index>12</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0.6980 </T0>
+	<T1>1.2932 </T1>
+	<T2>1.9224 </T2>
+	<T3>0 </T3>
+  </parameter12>
+  
+  <parameter13>
+    <name>loco_left_walk_fast.skeleton</name>
+    <index>13</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0 </T0>
+	<T1>0.5706 </T1>
+	<T2>1.0376 </T2>
+	<T3>0 </T3>
+  </parameter13>
+  
+  <parameter14>
+    <name>loco_right_walk_fast.skeleton</name>
+    <index>14</index>
+	<forward_vel>10</forward_vel>
+	<turn_vel>0</turn_vel>
+	<side_vel>0</side_vel>
+	<T0>0.5484 </T0>
+	<T1>1.0248 </T1>
+	<T2>1.5196 </T2>
+	<T3>0 </T3>
+  </parameter14>
+  
+ </parameters>
+ </opencv_storage>

@@ -23,3 +23,30 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+
+
+-----
+
+# Build
+
+- 使用cmake来build ogre。
+- windows平台 测试通过vs2013 32bit
+- 添加DualQuaternion下所有hpp和cpp文件到项目中
+
+
+# dependices
+
+### opencv-2.4.13
+
+- 链接其 lib和 dll动态库
+- 32位
+- 目录
+	- x86/vc12/bin
+	- x86/vc12/lib
+ 
+# Sample DualQuaternion
+
+- 注意资源路径 E:/ogre_old/Samples/Media/models/
+

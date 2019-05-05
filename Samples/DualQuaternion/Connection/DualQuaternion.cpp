@@ -78,12 +78,13 @@ namespace Ogre
 			ANIM_CHOP = srcAs->getLength();
 
 			//locomotion.initLocomotion("..\\..\\Samples\\DualQuaternion\\Connection\\motion_params.xml", srcEntity);
-			locomotion.initLocomotion("C:/Users/ling/Desktop/sinbad-ogre67/sinbad-ogre/Samples/DualQuaternion/Connection/motion_params.xml", srcEntity);
+			locomotion.initLocomotion("E:/ogre_old/Samples/Media/models/motion_params.xml", srcEntity);
 			//Ling, ini reach
-			reach.initReach("C:/Users/ling/Desktop/sinbad-ogre67/sinbad-ogre/Samples/DualQuaternion/Connection/reach_params.xml", srcEntity, mSceneMgr);
+			reach.initReach("E:/ogre_old/Samples/Media/models/reach_params.xml", srcEntity, mSceneMgr);
+			//reach.initReach("C:/Users/ling/Desktop/sinbad-ogre67/sinbad-ogre/Samples/DualQuaternion/Connection/reach_params.xml", srcEntity, mSceneMgr);
 			visualize_pseudo_sample_points();
 			
-			grasp.initGrasp("C:/Users/ling/Desktop/sinbad-ogre67/sinbad-ogre/Samples/DualQuaternion/Connection/grasp_params.xml", mSceneMgr, srcEntity);
+			grasp.initGrasp("E:/ogre_old/Samples/Media/models/grasp_params.xml", mSceneMgr, srcEntity);
 
 			step = 0;
 			runtime = 0;// 1.8;// 0;

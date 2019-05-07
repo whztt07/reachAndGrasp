@@ -5,7 +5,7 @@ Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis te
 ```
 
 ## ScreenShot
-
+![](https://raw.githubusercontent.com/lealzhan/ogre_old/master/Samples/DualQuaternion/Connection/result/reach_0.gif)
 
 # Build
 

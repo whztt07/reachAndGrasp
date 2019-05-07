@@ -1,4 +1,4 @@
-# An algoithm to automatically generate reach and grasp animation
+# An algorithm to automatically generate reach and grasp animation
 这个项目实现了 **基于样本的 手臂移动reach 和 手掌抓取grasp 的 自动动画生成算法**。整个算法的实现是基于OGRE的动画系统，算法的核心参考了
 ```
 Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis technique for locomotion and object manipulation." Proceedings of the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games. ACM, 2012.

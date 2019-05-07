@@ -31,8 +31,10 @@ THE SOFTWARE.
 
 # Build
 
+- 本仓库已包含ogre的Dependencies，是32bit的。
 - 使用cmake来build ogre。
 - windows平台 测试通过vs2013 32bit
+- 
 - 添加DualQuaternion下所有hpp和cpp文件到项目中
 
 

@@ -15,7 +15,9 @@ Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis te
 - 对于Sample DualQuaternion的配置
 	- 手动添加DualQuaternion下所有hpp和cpp文件到项目中
 	- 手动添加opencv的头文件路径
-		```..\..\..\Dependencies\include\opencv-2.4.13```
+		```
+		..\..\..\Dependencies\include\opencv-2.4.13
+		```
 	- 手动添加opencv的lib文件
 		```
 		..\..\..\Dependencies\lib\Debug\opencv_core2413d.lib
@@ -25,14 +27,3 @@ Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis te
 	- 注意DualQuaternion.cpp下的资源路径
 	```ogre_old/Samples/Media/models/```
 	
- 
-
-# dependices
-
-### opencv-2.4.13
-
-- 链接其 lib和 dll动态库
-- 32位
-- 目录
-	- x86/vc12/bin
-	- x86/vc12/lib

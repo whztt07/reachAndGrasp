@@ -7,6 +7,8 @@ Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis te
 ## 截屏 ScreenShot
 ![](https://raw.githubusercontent.com/lealzhan/reachAndGrasp/master/Samples/DualQuaternion/Connection/result/reach_1.gif)
 
+白色小球是动作捕捉的样本点。透明大球的圆心是算法生成的动画中手臂末端的目标位置。
+
 ## Building
 - 只支持windows系统. Only support windows
 - 本仓库已包含ogre的 Dependencies（32bit），无需再次下载. Already include Dependencies(32bit) for ogre.

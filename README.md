@@ -28,3 +28,5 @@ Feng, Andrew W., Yuyu Xu, and Ari Shapiro. "An example-based motion synthesis te
 	- 注意DualQuaternion.cpp下的资源路径
 	```ogre_old/Samples/Media/models/```
 	
+## Contact
+Email: lealzhan@126.com
